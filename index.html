@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kowshika Muthukrishnan | Payment Posting Specialist</title>
+<meta name="description" content="Payment posting and medical billing specialist with 5 years of experience in EOB/ERA review, insurance and patient payment posting.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f1f5f3; --card:#ffffff; --ink:#10302f; --muted:#51696a; --line:#cfdcd8;
+  --brand:#0f5c57; --brand-soft:#dcece8; --good:#1f8a5f; --stamp:#2b45a8;
+  --display:'Bricolage Grotesque',system-ui,sans-serif;
+  --body:'Public Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0b1b1b; --card:#112626; --ink:#e6f1ee; --muted:#9db6b2; --line:#244140;
+    --brand:#5fd1bf; --brand-soft:#14312f; --good:#52d49c; --stamp:#8fa6ff;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0b1b1b; --card:#112626; --ink:#e6f1ee; --muted:#9db6b2; --line:#244140;
+  --brand:#5fd1bf; --brand-soft:#14312f; --good:#52d49c; --stamp:#8fa6ff;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
+.logo{font:800 1.15rem var(--display);text-decoration:none;letter-spacing:-.01em}
+.links{display:flex;gap:1.5rem;align-items:center}
+.links a{text-decoration:none;font-size:.95rem;color:var(--muted);font-weight:500}
+.links a:hover{color:var(--ink)}
+#theme{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;width:38px;height:38px;cursor:pointer;font-size:1rem}
+@media(max-width:720px){.links a{display:none}}
+
+/* hero */
+.hero{padding:clamp(3rem,8vw,6.5rem) 0 clamp(3rem,6vw,5rem)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+.role{display:inline-block;font:500 .9rem var(--mono);color:var(--brand);background:var(--brand-soft);padding:.35rem .8rem;border-radius:6px;margin-bottom:1.4rem}
+h1{font:800 clamp(2.8rem,7vw,5.4rem)/.98 var(--display);letter-spacing:-.035em}
+.lede{margin-top:1.5rem;max-width:34rem;color:var(--muted);font-size:1.15rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--brand);transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--brand);color:var(--paper)}
+.btn.ghost{color:var(--brand)}
+.facts{display:flex;flex-wrap:wrap;gap:2rem;margin-top:2.6rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.facts b{display:block;font:800 1.9rem var(--display);letter-spacing:-.02em}
+.facts span{font-size:.9rem;color:var(--muted)}
+
+/* remittance */
+.era{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.5rem 1.5rem;position:relative;box-shadow:0 18px 40px -22px rgba(16,48,47,.35)}
+.era::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;border-radius:14px 14px 0 0;background:repeating-linear-gradient(90deg,var(--brand) 0 14px,transparent 14px 20px)}
+.era h2{font:700 1.05rem var(--display);margin-top:.4rem}
+.era .meta{font:400 .78rem var(--mono);color:var(--muted);margin:.2rem 0 1rem}
+.row{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-bottom:1px dashed var(--line);font:400 .92rem var(--mono)}
+.row span:first-child{font-family:var(--body);color:var(--muted)}
+.row.total{border-bottom:0;border-top:2px solid var(--ink);margin-top:.3rem;padding-top:.8rem;font-weight:500;font-size:1.05rem}
+.row.total span:first-child{color:var(--ink);font-weight:600}
+.row.hide{opacity:.28}
+.row{transition:opacity .4s}
+#bal.zero{color:var(--good)}
+.post{margin-top:1.1rem;width:100%;padding:.8rem;border-radius:10px;border:0;background:var(--ink);color:var(--paper);font:600 1rem var(--body);cursor:pointer}
+.post[disabled]{background:var(--brand-soft);color:var(--brand);cursor:default}
+.stamp{position:absolute;right:1.2rem;top:3.3rem;transform:rotate(-12deg) scale(1.8);opacity:0;border:3px solid var(--stamp);color:var(--stamp);font:800 1.5rem var(--display);padding:.1rem .7rem;border-radius:6px;letter-spacing:.05em;pointer-events:none;transition:all .28s cubic-bezier(.2,1.4,.4,1)}
+.era.posted .stamp{opacity:.9;transform:rotate(-12deg) scale(1)}
+.note{font-size:.78rem;color:var(--muted);margin-top:.7rem;text-align:center}
+
+/* sections */
+section{padding:clamp(3rem,7vw,5.5rem) 0}
+.alt{background:var(--card);border-block:1px solid var(--line)}
+h2.title{font:800 clamp(1.9rem,4vw,2.8rem)/1.05 var(--display);letter-spacing:-.025em;margin-bottom:2rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.about p{color:var(--muted)}
+.about p+p{margin-top:1rem}
+.checks{list-style:none;padding:0;display:grid;gap:.7rem}
+.checks li{padding-left:2rem;position:relative}
+.checks li::before{content:"✓";position:absolute;left:0;top:.1rem;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--brand-soft);color:var(--brand);font-size:.8rem;font-weight:700;display:grid;place-items:center}
+
+/* timeline */
+.tl{list-style:none;padding:0;margin:0;border-left:2px solid var(--line);margin-left:.5rem}
+.tl>li{position:relative;padding:0 0 2.6rem 2rem}
+.tl>li:last-child{padding-bottom:0}
+.tl>li::before{content:"";position:absolute;left:-8px;top:.55rem;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--brand)}
+.tl h3{font:700 1.3rem var(--display)}
+.tl .co{color:var(--brand);font-weight:600}
+.tl .when{font:400 .85rem var(--mono);color:var(--muted);margin:.15rem 0 .8rem}
+.tl ul{padding-left:1.1rem;color:var(--muted);display:grid;gap:.5rem;max-width:46rem}
+
+/* skills */
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chip{padding:.5rem .95rem;border:1px solid var(--line);border-radius:999px;background:var(--card);font-size:.95rem;font-weight:500}
+.grid2{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem}
+@media(max-width:800px){.grid2{grid-template-columns:1fr}}
+h3.sub{font:700 1.1rem var(--display);margin-bottom:1rem}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem}
+.tool{border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;background:var(--paper)}
+.tool b{display:block;font:700 1.05rem var(--display)}
+.tool span{font-size:.85rem;color:var(--muted)}
+.edu{display:grid;gap:1.4rem}
+.edu p{color:var(--muted);font-size:.98rem}
+.edu strong{color:var(--ink)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:20px;padding:clamp(2rem,5vw,3.5rem);display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+.contact h2{font:800 clamp(1.9rem,4vw,2.8rem)/1.05 var(--display);letter-spacing:-.025em}
+.contact p{opacity:.8;margin-top:.8rem}
+.contact ul{list-style:none;padding:0;display:grid;gap:.8rem}
+.contact a{display:block;text-decoration:none;padding:1rem 1.2rem;border:1px solid color-mix(in srgb,var(--paper) 30%,transparent);border-radius:12px;word-break:break-word}
+.contact a:hover{background:color-mix(in srgb,var(--paper) 12%,transparent)}
+.contact small{display:block;opacity:.65;font-size:.8rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;text-align:center}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a class="logo" href="#top">Kowshika M.</a>
+    <div class="links">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      <button id="theme" aria-label="Switch light or dark theme">◐</button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="role">Payment Posting Specialist</p>
+      <h1>Kowshika Muthukrishnan</h1>
+      <p class="lede">I post insurance and patient payments accurately, so every account balance matches what was billed, allowed, written off and paid. Five years in medical billing and EOB/ERA review.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:kowshikam12397@gmail.com">Email me</a>
+        <a class="btn ghost" href="#experience">See my experience</a>
+      </div>
+      <div class="facts">
+        <div><b>5 years</b><span>in medical billing</span></div>
+        <div><b>BCBS</b><span>and other carriers</span></div>
+        <div><b>Guadalajara</b><span>Jalisco, Mexico</span></div>
+      </div>
+    </div>
+
+    <div class="era" id="era" aria-label="Interactive sample remittance">
+      <div class="stamp" aria-hidden="true">POSTED</div>
+      <h2>Sample remittance review</h2>
+      <p class="meta">Example figures, not real patient data</p>
+      <div class="row"><span>Billed amount</span><span>$480.00</span></div>
+      <div class="row"><span>Contractual write-off</span><span>−$167.50</span></div>
+      <div class="row"><span>Allowed amount</span><span>$312.50</span></div>
+      <div class="row hide" id="r1"><span>Insurance payment</span><span>−$250.00</span></div>
+      <div class="row hide" id="r2"><span>Moved to patient balance</span><span>−$62.50</span></div>
+      <div class="row total"><span>Open balance</span><span id="bal">$312.50</span></div>
+      <button class="post" id="postBtn">Post payment</button>
+      <p class="note" id="note">Check the numbers, then post.</p>
+    </div>
+  </div>
+</div>
+
+<section id="about" class="alt">
+  <div class="wrap">
+    <h2 class="title">Careful with the numbers</h2>
+    <div class="about">
+      <div>
+        <p>I support healthcare financial transactions, from insurance payment processing to EOB and ERA review. I read claim and patient details closely and spot differences in billed and allowed amounts, write-offs, offsets, denials and patient balances.</p>
+        <p>I have worked with contracted and non-contracted carriers, including BCBS, and with TOS payment posting. I am used to deadline-driven work where accuracy and quality come first.</p>
+      </div>
+      <ul class="checks">
+        <li>Review EOBs and ERAs before applying any payment</li>
+        <li>Check date of service, billed, allowed and write-off amounts</li>
+        <li>Flag denials, offsets and balance discrepancies</li>
+        <li>Post insurance and patient payments on time</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2 class="title">Experience</h2>
+    <ol class="tl">
+      <li>
+        <h3>Senior Client Partner</h3>
+        <p class="co">Access Healthcare Pvt Ltd</p>
+        <p class="when">Chennai, India · December 2021 – May 2024</p>
+        <ul>
+          <li>Reviewed EOBs and ERAs to support accurate insurance payment posting.</li>
+          <li>Validated date of service, billed amount, allowed amount, write-off, patient balance, offsets and denial information before applying payments.</li>
+          <li>Posted insurance payments for contracted and non-contracted carriers, including Blue Cross Blue Shield (BCBS), and processed patient payments.</li>
+          <li>Processed TOS payments with a focus on posting accuracy, quality standards and on-time daily work.</li>
+          <li>Checked payment and account details to find discrepancies and keep account balances correct.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Financial Transaction Executive</h3>
+        <p class="co">Digiclarity Global Solutions Pvt Ltd</p>
+        <p class="when">Chennai, India · 6 months</p>
+        <ul>
+          <li>Handled financial transaction processing while keeping data accurate and meeting quality standards.</li>
+          <li>Completed assigned transaction work carefully and on time.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Data Processor</h3>
+        <p class="co">Deccan iServices Pvt Ltd</p>
+        <p class="when">Villupuram, India · 2 years</p>
+        <ul>
+          <li>Processed data with a focus on accuracy, consistency and timely completion.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <h2 class="title">Skills and tools</h2>
+    <div class="grid2">
+      <div>
+        <h3 class="sub">Core skills</h3>
+        <div class="chips">
+          <span class="chip">Medical billing and payment posting</span>
+          <span class="chip">EOB and ERA review</span>
+          <span class="chip">Insurance and patient payments</span>
+          <span class="chip">Claim and date-of-service review</span>
+          <span class="chip">Payment discrepancy identification</span>
+          <span class="chip">Write-off, offset and denial review</span>
+          <span class="chip">TOS payment posting</span>
+          <span class="chip">Insurance carrier workflows</span>
+          <span class="chip">Quality control</span>
+          <span class="chip">Deadline management</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub">Systems</h3>
+        <div class="tools">
+          <div class="tool"><b>Citrix</b><span>Remote billing systems</span></div>
+          <div class="tool"><b>Modernizing Medicine</b><span>Healthcare platform</span></div>
+          <div class="tool"><b>MDIV</b><span>Billing system</span></div>
+          <div class="tool"><b>MS Office</b><span>Word and Excel</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap grid2">
+    <div>
+      <h2 class="title">Education</h2>
+      <div class="edu">
+        <p><strong>B.Sc. Physics, 2017 (75%)</strong><br>Thiruvalluvar University<br>St. Joseph’s College of Arts and Science (Autonomous), Cuddalore</p>
+      </div>
+    </div>
+    <div>
+      <h2 class="title">Languages</h2>
+      <div class="chips">
+        <span class="chip">Tamil: read, write, speak</span>
+        <span class="chip">English: read, write, speak</span>
+        <span class="chip">Typing in English and Tamil</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Looking for a payment posting specialist?</h2>
+        <p>I would be glad to hear from you. Send me a message or call.</p>
+      </div>
+      <ul>
+        <li><a href="mailto:kowshikam12397@gmail.com"><small>Email</small>kowshikam12397@gmail.com</a></li>
+        <li><a href="tel:+523343294573"><small>Phone</small>+52 334 329 4573</a></li>
+        <li><a href="#top"><small>Location</small>Guadalajara, Jalisco, Mexico</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Kowshika Muthukrishnan</div></footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var root = document.documentElement;
+  document.getElementById('theme').addEventListener('click', function(){
+    var dark = root.getAttribute('data-theme') === 'dark' ||
+      (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    root.setAttribute('data-theme', dark ? 'light' : 'dark');
+  });
+
+  var btn = document.getElementById('postBtn'), era = document.getElementById('era'),
+      bal = document.getElementById('bal'), note = document.getElementById('note');
+  btn.addEventListener('click', function(){
+    document.getElementById('r1').classList.remove('hide');
+    setTimeout(function(){ document.getElementById('r2').classList.remove('hide'); }, 350);
+    var start = 312.5, t0 = null;
+    function tick(t){
+      if(!t0) t0 = t;
+      var p = Math.min((t - t0) / 900, 1);
+      bal.textContent = '$' + (start * (1 - p)).toFixed(2);
+      if(p < 1){ requestAnimationFrame(tick); }
+      else { bal.classList.add('zero'); era.classList.add('posted'); note.textContent = 'Balanced to $0.00. Every dollar accounted for.'; }
+    }
+    requestAnimationFrame(tick);
+    btn.disabled = true; btn.textContent = 'Payment posted';
+  });
+})();
+</script>
+</body>
+</html>
